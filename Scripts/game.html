@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricochet Rumble</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div class="click-blocker"></div>
+    <div class="pop-up">
+        <div class="close-button">&times;</div>
+        <div class="pop-up-content">
+            <div class="winner-image"><img src="../Images/titan-new-1.png"></div>
+            <div class="winner-details"> WON THE GAME!</div>
+        </div>
+        <div class="replay-button-container">
+            <button class="replay-button" style="display: none;">Replay</button>
+        </div>
+    </div>
+
+    <div class="history-pop-up">
+        <div class="history-title-section">
+            <div class="history-pop-up-title">History of Moves:</div>
+            <div class="history-close-button">x</div>
+        </div>
+        
+        <div class="history-of-moves"></div>
+    </div>
+
+
+    <div class="page-container">
+        <div class="page-left"></div>
+        <div class="page-centre">
+            <div class="title">
+                <p>Ricochet Rumble</p>
+                <div class="extra-button">
+                    <img class="history-button" src = '../Images/history-icon.png'>
+                    <!-- <img class="settings-button"> -->
+            
+                </div>
+            </div>
+            <div class="player-details player-1-details">
+                <div class="spell-container">
+                    <p class="player-1-spell-left">Spell Left: 2</p>
+                    <label class="spell-switch">
+                        <input type="checkbox" class="player-1-spell-use">
+                        <span class="spell-slider"></span>
+                    </label>
+                </div>
+                <div class="player-1-timer timer">Player 1:<span>00:10:00</span></div>
+            </div>
+           
+            <div class="game-board js-game-board"></div>
+            <div class="player-details player-1-details">
+                <div class="player-2-timer timer">Player 2:<span>00:10:00</span></div>
+                <div class="spell-container">
+                    <p class="player-2-spell-left">Spell Left: 2</p>
+                    <label class="spell-switch">
+                        <input type="checkbox" class="player-2-spell-use">
+                        <span class="spell-slider"></span>
+                    </label>
+                </div>
+            </div>
+            
+        </div>
+        <div class="page-right">
+            <div class="bullet-travel-time">
+                <p class="switch-text">Include Bullet Travel Time</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                  </label>
+            </div>
+            
+            <div class="buttons">
+                <p>Turn: <span class="player">Player 1</span></p>
+                <div class="buttons-division">
+                    <button class="pause-button pause js-pause-button">Pause</button>
+                    <button class="pause-button reset-button">Reset</button>
+                </div>
+                <div class="buttons-division-2">
+                    <button class="undo-button">UNDO</button>
+                    <button class="redo-button">REDO</button>
+                </div>
+                
+            </div>
+            
+
+            <div class="hidden-buttons">
+                <div class="rotation-header">Rotation moves:</div>
+                <div class="rotate-buttons">
+                    <button class="button-r ">
+                        <img class="rotate left-rotate" src="../Images/left-rotate-new.png">
+                    </button>
+                    <button class="button-r">
+                        <img class="rotate right-rotate" src="../Images/right-rotate-new.png">
+                    </button>
+                </div>
+                
+            </div>
+            <div class="page-right-blocker"></div>
+        </div>
+        
+    </div>
+
+    <script src="./pieces.js"></script>
+    <script src="./app1.js"></script>
+    <script src="./app2.js"></script>
+</body>
+</html>

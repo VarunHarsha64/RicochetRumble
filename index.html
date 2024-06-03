@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RICOCHET RUMBLE</title>
+	<style>
+        @font-face {
+        font-family: 'CustomFont';
+        src: url('./et-artilux-font/EtArtiluxText-V449x.ttf') format('truetype'); /* Safari, Android, iOS */
+        font-weight: normal;
+        font-style: normal;
+        }
+		body {
+            color: white;
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+			text-align: center;
+            background-image: url('./Images/landing-page-background.png');
+            background-size: cover; /* This ensures the image covers the entire background */
+            background-position: center; /* This centers the image */
+            background-repeat: no-repeat;
+
+            font-family: 'CustomFont';
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.307));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            justify-content: center;
+            padding: 15px;
+		}
+		
+		.title {
+			font-size: 80px;
+			font-weight: bold;
+			color: #b5b5b5;
+			margin-bottom: 20px;
+		}
+		
+		.play-button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.play-button:hover {
+			background-color: #3e8e41;
+		}
+
+        h1, h2 {
+            font-size: 30px;
+            color: #cecece;
+        }
+        ul {
+            font-size: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li,p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .emoji {
+            margin-right: 5px;
+        }
+
+        .rules-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">RICOCHET RUMBLE</h1>
+		<h1>8x8 Board Game Rules</h1>
+        <div class="rules-container">
+            <div>
+                <h2>🎮 Objective</h2>
+                <p>🏆 Destroy the opponent's Titan.</p>
+    
+                <h2>🧩 Pieces</h2>
+                <ul>
+                    <li>🎴 Titan | 🛡️ Tank | 🌀 Ricochet (x2) </li>
+                    <li>↩️ Semi Ricochet (x2) | 🎯 Cannon</li>
+                </ul>
+    
+                <h2>📏 Moves</h2>
+                <ul>
+                    <li>Any piece: Move 1 tile or rotate.</li>
+                    <li>Cannon: Horizontal moves only.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>🔄 Abilities</h2>
+                <ul>
+                    <li>🌀 Ricochets: Reflect 90°; swap/rotate.</li>
+                    <li>↩️ Semi Ricochets: Reflect 90° on one side; break on the other.</li>
+                    <li>🛡️ Tanks: Absorb bullets except one side.</li>
+                </ul>
+                <h2>⏳ Timer</h2>
+                <ul>
+                    <li>Each player: 10 minutes.</li>
+                    <li>Switch for bullet travel time.</li>
+                </ul>
+    
+                
+            </div>
+            <div>
+                <h2>⏸️ Controls</h2>
+                <ul>
+                    <li>Pause ⏸️ | Reset 🔄 | Continue ▶️</li>
+                    <li>Redo 🔁 | Undo 🔄</li>
+                </ul>
+    
+                <h2>📝 History</h2>
+                <p>📜 Shows move history.</p>
+    
+                <h2>🧙 Spell Slider</h2>
+                <p>🪄 Bullets bypass Tanks and Semi Ricochets when on.</p>
+            </div>
+        </div>
+        
+		<button class="play-button" onclick="location.href='./Scripts/game.html'">PLAY NOW!</button>
+	</div>
+</body>
+</html>
