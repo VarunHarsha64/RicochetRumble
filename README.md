@@ -2,7 +2,7 @@
 Ricochet Rumble
 Arjun, a tech enthusiast, was bored of playing chess. So he asked his nerd friend Vishrudh to suggest a two-player game that was new and more interesting. Vishrudh, who was lazy yet brilliant, came up with an immediate idea of Ricochet Rumble, where the game is played as follows:
 
-# Game Logic
+Game Logic
 An 8x8 - 2 player turn-based board game consisting of 5 different pieces.
 Titan
 Tank
